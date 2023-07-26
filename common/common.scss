@@ -1,18 +1,30 @@
-@font-face {
-  font-family: "Source Serif Pro";
-  src: url($sourceserifpro-reg);
-}
+//@font-face {
+//  font-family: "Source Serif Pro";
+//  src: url($sourceserifpro-reg);
+//}
+//
+//@font-face {
+//  font-family: "Source Serif Pro";
+//  src: url($sourceserifpro-bold);
+//  font-weight: bold;
+//}
 
-@font-face {
-  font-family: "Source Serif Pro";
-  src: url($sourceserifpro-bold);
-  font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800&display=swap");
+
+:root {
+  /* Fonts */
+  --font-logo: "Tilt Warp", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --font-serif: "Source Serif 4", serif;
+  --font-mono: Menlo, Courier, monospace;
 }
 
 // Global styles
 
 html {
-  font-family: "Source Serif Pro", serif;
+  font-family: var(--font-serif);
   font-size: 16px;
 }
 
@@ -22,7 +34,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Serif Pro", serif;
+  font-family: var(--font-sans);
+  font-weight: 800;
+}
+
+.d-header #site-text-logo {
+  font-family: var(--font-logo);
 }
 
 .select-kit.combo-box .select-kit-header,
@@ -175,6 +192,8 @@ tbody {
     line-height: 1.2;
     padding: 0;
     margin-bottom: 5px;
+    font-family: var(--font-sans);
+    font-weight: 600;
   }
 }
 
@@ -472,7 +491,7 @@ span.latest-poster a {
 
 #topic-title h1,
 .extra-info-wrapper .topic-link {
-  font-weight: normal;
+  font-weight: 800;
 }
 
 .extra-info-wrapper .badge-wrapper.bullet {
@@ -773,6 +792,11 @@ a.mention-group {
   font-size: $font-up-2;
   margin-right: 100px;
   padding-left: 1em;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  a {
+    color: var(--primary);
+  }
 }
 
 div.bio {
