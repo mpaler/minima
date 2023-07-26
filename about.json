@@ -6,5 +6,20 @@
     "sourceserifpro-reg": "assets/SourceSerifPro-Regular.ttf",
     "sourceserifpro-bold": "assets/SourceSerifPro-Bold.ttf"
   },
-  "color_schemes": {}
+  "color_schemes": {
+    "Swaylocks": {
+      "primary": "222222",
+      "secondary": "ffffff",
+      "tertiary": "0088cc",
+      "quaternary": "e45735",
+      "header_background": "ff1a75",
+      "header_primary": "333333",
+      "highlight": "ffff4d",
+      "danger": "c80001",
+      "success": "009900",
+      "love": "fa6c8d",
+      "selected": "e9e9e9",
+      "hover": "f2f2f2"
+    }
+  }
 }
